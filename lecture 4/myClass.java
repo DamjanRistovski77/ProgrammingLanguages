@@ -1,67 +1,70 @@
-public class StringManipulation {
+package exe1;
 
-public static void main(String[] args) {
+public class myClass {
+	public static void main(String[] args) {
 
-String word = "Computer";
+		String word = "Computer";
 
-// Original form, capital, and small letters
+		// Original form, capital, and small letters
 
-System.out.println("Original: " + word);
+		System.out.println("Original: " + word);
 
-System.out.println("In small letters: " + word.toLowerCase());
+		System.out.println("In small letters: " + word.toLowerCase());
 
-System.out.println("In capital letters: " + word.toUpperCase());
+		System.out.println("In capital letters: " + word.toUpperCase());
 
-// Length of the word
+		// Length of the word
 
-System.out.println("Length: " + word.length());
+		System.out.println("Length: " + word.length());
 
-// In small letters: com
+		// In small letters: com
 
-System.out.println("In small letters: " + word.substring(0, 3).toLowerCase());
+		System.out.println("In small letters: " + word.substring(0, 3).toLowerCase());
 
-// In capital letters: CO
+		// In capital letters: CO
 
-System.out.println("In capital letters: " + word.substring(0, 2).toUpperCase());
+		System.out.println("In capital letters: " + word.substring(0, 2).toUpperCase());
 
-// First letter: C
+		// First letter: C
 
-System.out.println("First letter: " + word.charAt(0));
+		System.out.println("First letter: " + word.charAt(0));
 
-// Last letter: r
+		// Last letter: r
 
-System.out.println("Last letter: " + word.charAt(word.length() - 1));
+		System.out.println("Last letter: " + word.charAt(word.length() - 1));
 
-// Middle letter: u
+		// Middle letter: u
 
-System.out.println("Middle letter: " + word.charAt(word.length() / 2));
+		System.out.println("Middle letter: " + word.charAt(word.length() / 2));
 
-// The word starts with "Con"
+		// The word starts with "Con"
 
-System.out.println("The word starts with 'Con': " + word.startsWith("Con"));
+		System.out.println("The word starts with 'Con': " + word.startsWith("Con"));
 
-// The word ends with "ion"
+		// The word ends with "ion"
 
-System.out.println("The word ends with 'ion': " + word.endsWith("ion"));
+		System.out.println("The word ends with 'ion': " + word.endsWith("ion"));
 
-// First two letters: "Co"
+		// First two letters: "Co"
 
-String firstTwoLetters = word.substring(0, 2);
+		String firstTwoLetters = word.substring(0, 2);
 
-System.out.println("The first two letters are: " + firstTwoLetters);
+		System.out.println("The first two letters are: " + firstTwoLetters);
 
-// Swap 'e' letters with 'o'
+		// Swap 'e' letters with 'o'
 
-String swappedWord = word.replace('e', 'o');
+		String swappedWord = word.replace('e', 'o');
 
-System.out.println("Swapped 'e' with 'o: " + swappedWord);
+		System.out.println("Swapped 'e' with 'o: " + swappedWord);
 
-// Replace "Compu" with "Calcula"
+		// Replace "Compu" with "Calcula"
 
-String replacedWord = word.replace("Compu", "Calcula");
+		String replacedWord = word.replace("Compu", "Calcula");
 
-System.out.println("Replaced 'Compu' with 'Calcula: " + replacedWord);
+		System.out.println("Replaced 'Compu' with 'Calcula: " + replacedWord);
 
+		}
+	
 }
+	
 
-}
